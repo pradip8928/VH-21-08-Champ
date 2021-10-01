@@ -1,0 +1,93 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url('covid3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+}
+
+.service-box {
+    width: 80%;
+    /* 80*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.single-service {
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+    text-decoration-color: #fff;
+    text-decoration: line-through;
+    /* text-decoration: none; */
+}
+
+.single-service img {
+    width: 80%;
+    /* 100%*/
+    border-radius: 7px;
+}
+
+.overlay {
+    width: 82%;
+    height: 100%;
+    /* width: 80%; */
+    /* 100%*/
+    /* height: 95%; */
+    /* 100%*/
+    position: absolute;
+    /* position: relative; */
+    /* absolute*/
+    top: 0;
+    right: 50px;
+    border-radius: 7px;
+    /* 7px */
+    cursor: pointer;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #78f3eb);
+    opacity: 0;
+    transition: 1s;
+}
+
+.single-service:hover .overlay {
+    opacity: 1;
+    color: rgb(235, 228, 228);
+}
+
+.service-desc {
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%);
+    transform: translateX(-50%);
+    transition: 1s;
+}
+
+hr {
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%
+}
+
+.service-desc p {
+    font-size: 14px;
+}
+
+.single-service:hover .service-desc {
+    bottom: 40%;
+    opacity: 1;
+}
+
+
+/* .single service #ambulance{
+    height:100px;
+} */
