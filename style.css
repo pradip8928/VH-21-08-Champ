@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Gemunu+Libre:wght@300&display=swap');
+:root {
+    --main-bg-color: rgb(46, 182, 87);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-size: cover; */
+    /* display: none; */
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    /* height: 10vh; */
+    /* background-color: var( --main-bg-color); */
+    background-color: #0076b0;
+    color: white;
+    height: 14vh;
+}
+
+.logo img {
+    height: 130px;
+    width: 200px;
+    padding: 0px 34px;
+    position: relative;
+    bottom: 9px;
+}
+
+nav {
+    display: flex;
+    /* align-items: bottom; */
+    align-items: flex-start;
+}
+
+nav ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+nav ul {
+    /* height: 10vh; */
+    font-size: 21px;
+    line-height: 1.1;
+    letter-spacing: 0.057em;
+    font-weight: 600;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: rgb(236, 233, 231);
+    text-decoration: none;
+    font-family: 'Gemunu Libre', sans-serif;
+    padding: 0px 7px;
+}
+
+nav ul li a:hover {
+    color: rgb(217, 224, 205);
+    font-weight: bolder;
+}
+
+.search {
+    display: flex;
+    align-items: top;
+    color: #796e6ea8;
+    /* height: 8vh;
+            width: 32vw;
+            /* width: 476px; */
+    padding: 0px 32px;
+    margin: 10px;
+    position: relative;
+    bottom: 22px;
+    align-items: center;
+    font-size: 21px;
+    line-height: 1.7;
+    letter-spacing: 0.187em;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.search input::placeholder {
+    display: flex;
+    color: rgb(17, 0, 0);
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    line-height: 1.7;
+    letter-spacing: 0.187em;
+    font-weight: 500;
+    font-style: italic;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+.search input {
+    display: flex;
+    height: 8vh;
+    width: 32vw;
+    align-items: center;
+    border-radius: 10px;
+    /* width: 476px; */
+    /* padding: 0px 32px; */
+}
+
+.sicon {
+    margin-left: -119px;
+    margin-right: 37px;
+    height: 7vh;
+    width: 4vw;
+    /* border-radius: 20px dotted black;
+            background-color: #6e6e6e; */
+}
+
+.sicon button {
+    height: 7vh;
+    width: 5vw;
+    margin-left: -19px;
+    border-radius: 20px dotted green;
+    background-color: #796e6e;
+    color: yellow;
+}
+
+.btn {
+    border: 5px double black;
+    border-radius: 10px;
+    cursor: auto;
+}
+
+.btn1 {
+    display: flex;
+    float: right;
+    border: 5px double black;
+    border-radius: 10px;
+    cursor: auto;
+}
+
+.search placeholder {
+    display: flex;
+    margin-bottom: 30px;
+    margin: 30px;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+main {
+    margin-right: 226px;
+}
+
+
+/* main {
+    height: 80vh;
+    color: rosybrown;
+    background-color: white;
+} */
+
+
+/* .container {
+            min-height: calc(100vh-12vh-10vh);
+        } */
+
+.signup {
+    display: flex;
+    align-self: flex-end;
+}
+
+.signup {
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    width: 35vw;
+    color: white;
+}
+
+#login {
+    display: flex;
+    margin: 411px;
+    /* margin-bottom: 10px; */
+    /* margin-top: 1px; */
+    padding-bottom: 10px;
+    position: relative;
+    bottom: 56px;
+    right: 125px;
+}
+
+
+/* just addd */
+
+#signup {
+    display: flex;
+    /* margin: 411px; */
+    /* margin-bottom: 10px; */
+    /* margin-top: 1px; */
+    padding-bottom: 10px;
+    position: relative;
+    bottom: 56px;
+    position: relative;
+    left: 235px;
+    height: 7vh;
+    border-radius: 56px;
+    color: black;
+    position: relative;
+}
+
+footer {
+    height: 10vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'lobster', lobster;
+}
+
+.Pallavi {
+    color: white
+}
+
+#Rijul {
+    font-size: 50px;
+    text-shadow: 5px 10px blur red;
+}
+
+
+/* #Feedback {
+    color: orange;
+    display: flex;
+    position: relative;
+    margin: 110px;
+    justify-content: right;
+} */
+
+
+/* .container {
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+} */
+
+.progress {
+    height: 3px;
+}
+
+
+/* progress */
+
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+.progress {
+    background-color: rgb(255, 124, 16);
+    height: 3px;
+    animation: progress 8s ease-in-out 0.5s 1 alternate;
+    /* animation: progress 1s linear 0.5s infinite running slidein; */
+}
+
+@keyframes progress {
+    0% {
+        width: 0vw;
+    }
+    35% {
+        width: 30vw;
+    }
+    50% {
+        width: 70vw;
+    }
+    75% {
+        width: 90vw;
+    }
+    100% {
+        width: 100vw;
+    }
+}
+
+#google_translate_element {
+    position: relative;
+    color: blue;
+    /* background-color: aqua; */
+    /* margin: ; */
+    /* left: 350px;
+    top: 120px; */
+    /* left: 1223px;
+    top: 85px; */
+    left: 987px;
+    top: 35px;
+}
+
+#map {
+    border: 0;
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    cursor: grab;
+}
+
+.text-center {
+    letter-spacing: 0.075em;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 21px;
+}
+
+#copyright {
+    position: relative;
+    left: 460px;
+    font-size: 11px;
+    font-weight: 300;
+    font-style: italic;
+    left: 521px;
+    top: 30px;
+}
+
+#btn {
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 4px;
+    background: black;
+    color: aliceblue;
+    /* padding-right: 38px; */
+    justify-content: center;
+    height: 40px;
+    width: 86px;
+    position: relative;
+    right: 34px;
+}
+
+#Sbtn {
+    color: black;
+    background: black;
+    border-radius: 8px;
+    border: 2px solid black;
+    height: 40px;
+    width: 86px;
+}
+
+#GO {
+    position: relative;
+    bottom: 54px;
+    left: 146px;
+    /* height: 56px; */
+    /* height: 40px;
+    width: 86px; */
+    height: 7vh;
+    width: 56px;
+}
+
+#Gbtn {
+    color: black;
+    background: black;
+    border-radius: 8px;
+    border: 2px solid black;
+    height: 40px;
+    width: 88px;
+}
+
+.data {
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 4px;
+    background: black;
+    color: aliceblue;
+    /* padding-right: 38px; */
+    /* justify-content: center; */
+    margin: 5px;
+    height: 40px;
+    /* width: 20px; */
+    position: relative;
+    bottom: 19px;
+    right: 10px;
+}

@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(-26deg, #03a9f4 0%, #03a7 50%, #262626 50%, #607d8b 100%);
+    /* background-size: cover; */
+    animation: christoffer 10s infinite linear;
+}
+
+@keyframes christoffer {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 5px;
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 15%, transparent 50%, transparent 85%, rgba(255, 255, 255, 0.1) 100%);
+    transform: scale(0.7);
+    filter: invert(1);
+    height: 100vh;
+}
+
+form {
+    margin: 50px;
+    text-align: center;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 2);
+}
+
+input {
+    display: block;
+    width: 350px;
+    height: 54px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px black solid;
+    outline: none;
+    font-size: 21px;
+    /* background: transparent; */
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    width: 350px;
+    height: 40px;
+    font-size: 20px;
+    background-color: rosybrown;
+    border-radius: 21px;
+    border: 2px solid black;
+    margin-top: 30px;
+}
+
+form h1 {
+    margin-bottom: 40px;
+}
