@@ -12,16 +12,16 @@
     h2{
         color:white;
         background:black;
-        height: 15vh;
+        /* height: 15vh; */
 text-align: center;
 position: relative;
 display: flex;
 flex-direction: column;
-top: 154px;
+top: 55px;
     }
 table{
     position: relative;
-    top:35vh
+    top:10vh
 }
 
 </style>
@@ -34,15 +34,15 @@ table{
 
                 <!--  -->
 
-        <h2>  COVID-19 DATA STATE WISE</h2>
+        <h2>   PATIENT STATUS</h2>
         <table class="table-bordered table-striped text-center" id="tbval">
             <tr>
-                <th class+"text-capitalize">Country</th>
-                <th class+"text-capitalize">State</th>
-                <th class+"text-capitalize">Confirmed</th>
-                <th class+"text-capitalize">active</th>
-                <th class+"text-capitalize">recovered</th>
-                <th class+"text-capitalize">deaths</th>
+                <th class="text-capitalize">lastupdatedtime</th>
+                <th class="text-capitalize">State</th>
+                <th class="text-capitalize">Confirmed</th>
+                <th class="text-capitalize">active</th>
+                <th class="text-capitalize">recovered</th>
+                <th class="text-capitalize">deaths</th>
                  
             </tr>
 
@@ -98,13 +98,13 @@ while($i< $statescount){
         </center>
 
     </div> 
-    <script>
+    <!-- <script>
     let newdata;   
         fetch('https://data.covid19india.org/data.json')
         .then(res=>res.json())
         .then(data => {newdata = JSON.stringify(data.statewise[0],null,4);
                 document.getElementById('divs').innerHTML = newdata
             })
-            <script>
+            <script> -->
 </body>
 </html>

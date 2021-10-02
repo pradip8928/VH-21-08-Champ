@@ -1,4 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    margin-top: 50px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url('covid3.jpg');
     background-size: cover;
     background-position: center;
@@ -91,3 +97,19 @@ hr {
 /* .single service #ambulance{
     height:100px;
 } */
+
+#statewise {
+    height: 40vh;
+}
+
+#vaccine {
+    height: 41vh;
+}
+
+#bed {
+    height: 41vh;
+}
+
+#ambulance {
+    height: 41vh;
+}
